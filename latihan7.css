@@ -1,0 +1,88 @@
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to left, rgba(99, 99, 153, 1) 35%, rgb(125, 198, 213) 100%) repeat-x;
+  font-family: "Comic Relief", system-ui;
+}
+
+nav,
+h2,
+h1,
+footer {
+  font-family: "DM Serif Display", serif;
+}
+
+.banner {
+  background: url(img/hero.jpg);
+  background-size: cover;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  color: white;
+}
+
+.konten {
+  text-align: justify;
+  background: linear-gradient(to left, rgba(99, 99, 153, 1) 35%, rgb(125, 198, 213) 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  padding: 75px 0;
+}
+
+.card-body {
+  background: linear-gradient(to left, rgb(126, 126, 192) 35%, rgb(145, 215, 228) 100%);
+  color: white;
+}
+
+.pt,
+.skin {
+  background: linear-gradient(to left, rgb(126, 126, 192) 35%, rgb(145, 215, 228) 100%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 50px;
+  margin-left: 15px;
+}
+
+/* TRANSISI */
+
+.sk {
+  transition: all 0.2s;
+}
+
+.sk:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  /* -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both; */
+  animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in-top {
+  0% {
+    /* -webkit-transform: translateY(-50px); */
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    /* -webkit-transform: translateY(-50px); */
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    /* -webkit-transform: translateY(0); */
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
